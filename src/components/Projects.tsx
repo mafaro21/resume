@@ -17,7 +17,7 @@ export default function Projects() {
             <Row>
 
                 <Col xs={24} xl={12}>
-                    <Carousel autoplay>
+                    <Carousel autoplay >
                         <div>
                             <img src={twitclone}
                                 alt='test'
