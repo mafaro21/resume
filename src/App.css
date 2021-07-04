@@ -1,61 +1,110 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
+:root{
+
+  /* --accent: #4299CB;
+  --text: #F4F3ED;
+  --background: #15151B;
+  --contact: #354177;
+  --footer: #08080A; */
+
+  /* --accent: #48E5C2;
+  --text: #ECE6DA;
+  --background: #252627;
+  --contact: #904E55;
+  --footer: #171818; */
+
+  --accent: #000;
+  --text: #ECE6DA;
+  --background: #444444;
+  --contact: #DA0037;
+  --footer: #171717;
+}
 
 .App {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  color: #EBE9EA;
-  background-color: #2A373D;
+  color: var(--text);
+  background-color: var(--background);
   min-height: 100vh ;
   max-width: 100vw;
+}
+.text, h1{
+  color: var(--text);
+
 }
 .wrapper {
   padding: 0 10% 0 10%;
   }
 
 .title{
-  /* margin-top: 80px; */
   font-weight: 600;
   font-size: 30px;
 }
 .main{
-  padding-top: 80px;
+  padding-top: 30px;
+}
+.icon{
+  border-radius: 50%;
+  width: 26%;
 }
 
 /* contact */
-.contact{
+.contact, .project-link{
   transition: all 0.2s;
+  color: var(--text);
 }
 .contact:hover{
-  transform: scale(1.1);
-  color: black;
+  transform: scale(1.2);
+  color: var(--accent);
   cursor: pointer;
+}
+.contact-bg{
+  background-color: var(--contact);
+  padding: 3% 0 3% 0;
 }
 
 /* projects */
+.project-link:hover{
+ color: var(--accent);
+ transform: scale(1.2);
+
+}
 .projects-img{
   width:100%
+}
+.project-detail{
+  text-align: left;
+  margin-left: 15px;
+  margin-top: 10px;
 }
 
 /* footer */
 footer{
-  background-color: navy;
-  /* position: fixed; */
+  background-color: var(--footer);
   left: 0;
   bottom: 0;
   height: 130px;
   width: 100%;
 }
 .footer-view{
-  background-color: navy;
-  margin-top: 16px;
+  padding-top: 16px;
 }
 .logo{
   height: 50px;
+  transition: all 0.3s;
+
+}
+.logo:hover{
+  transform: scale(1.3);
 }
 
 @media only screen and (max-width: 600px) {
   .contact{
     padding-bottom: 6%;
+  }
+  .project-detail{
+    text-align: left;
+    margin-top: 10px;
   }
 }
