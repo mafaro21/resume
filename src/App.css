@@ -8,17 +8,17 @@
   --contact: #354177;
   --footer: #08080A; */
 
-  /* --accent: #48E5C2;
+  --accent: #48E5C2;
   --text: #ECE6DA;
   --background: #252627;
   --contact: #904E55;
-  --footer: #171818; */
+  --footer: #171818;
 
-  --accent: #000;
+  /* --accent: #000;
   --text: #ECE6DA;
   --background: #444444;
   --contact: #DA0037;
-  --footer: #171717;
+  --footer: #171717; */
 }
 
 .App {
@@ -43,6 +43,7 @@
 }
 .main{
   padding-top: 30px;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),url('./images/zia-syed1.jpg'); */
 }
 .icon{
   border-radius: 50%;
@@ -60,6 +61,7 @@
   cursor: pointer;
 }
 .contact-bg{
+  /* margin-top: -12px; */
   background-color: var(--contact);
   padding: 3% 0 3% 0;
 }

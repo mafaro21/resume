@@ -1,5 +1,5 @@
 import React from 'react'
-import { Row, Col, Carousel, Image, Divider } from 'antd';
+import { Row, Col, Carousel, Image, Divider, Progress } from 'antd';
 import twitclone from '../images/twitclone.png'
 import twit2 from '../images/twit2.png'
 import twit3 from '../images/twit3.png'
@@ -9,10 +9,12 @@ import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons/faExternalL
 
 export default function Projects() {
 
+
     let project = [
         {
             title: 'TwitClone',
             link: 'https://twitclone.netlify.app',
+            progress: 86,
             img: twitclone,
             img2: twit2,
             img3: twit3,
@@ -24,6 +26,7 @@ export default function Projects() {
         },
         // {
         //     title: 'RealEstate (Ongoing)',
+        //     progress: 77,
         //     img: twitclone,
         //     desc1: 'RealEstate is a real estate, e-commerce web system which looks to help users find houses/apartments for either rent or sale',
         //     desc2: 'Users can view property and get into contact with agents',
@@ -32,6 +35,7 @@ export default function Projects() {
         // },
         // {
         //     title: 'Wedemy (Ongoing)',
+        //     progress: 6,
         //     img: twitclone,
         //     desc1: 'Wedemy is a clone of the e-learning site Udemy.',
         //     desc2: 'The site is currently being developed',
@@ -91,6 +95,10 @@ export default function Projects() {
                             <div className="project-detail p-3" >
                                 <p>{item.desc1}</p>
                                 <p>{item.desc2}</p>
+                                <p style={{ width: '50%', fontWeight: 700, display: 'flex' }}>
+                                    <span style={{ paddingRight: '10px' }}>Status: </span>
+                                    <Progress percent={item.progress} />
+                                </p>
                                 <p><span style={{ fontWeight: 700 }}>Built with: </span> {item.built}</p>
                                 <p><span style={{ fontWeight: 700 }}>Features include: </span>{item.features} </p>
                             </div>

@@ -14,15 +14,15 @@ function App() {
       <div className="main ">
         <img src={icon} alt="profile" className="icon" />
         <div className="title">Mafaro Mushonga</div>
-        <p>Hello!, and welcome my name is Mafaro i am a front-end web developer, please hire me!</p>
+        <p>Hello!, and welcome my name is Mafaro I am a front-end web developer, please hire me!</p>
         <p>details no-one cares about here</p>
-
-
-        <Contacts />
-
-        <Projects />
-
       </div>
+
+
+      <Contacts />
+
+      <Projects />
+
       <Footer />
     </div>
   );
