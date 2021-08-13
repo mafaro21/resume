@@ -23,7 +23,7 @@ export default function Contacts() {
 
                 <Col xs={24} sm={4} md={6} className="contact">
                     <FontAwesomeIcon icon={faPhone} size="2x" />
-                    <div>(+86) 155 0406 4929</div>
+                    <div>(+263) 0781 926 018</div>
                 </Col>
 
                 <Col xs={24} sm={4} md={6} className="contact">

@@ -12,10 +12,11 @@ function App() {
   return (
     <div className="App ">
       <div className="main ">
-        <img src={icon} alt="profile" className="icon" />
+        {/* <img src={icon} alt="profile" className="icon" /> */}
         <div className="title">Mafaro Mushonga</div>
-        <p>Hello!, and welcome my name is Mafaro I am a front-end web developer, please hire me!</p>
-        <p>details no-one cares about here</p>
+        <p>Hello!, and welcome my name is Mafaro I am a front-end web developer</p>
+        <p>I'm 22 years old and currently unemployed.  </p>
+        <p>I am looking forward to join a team so that i can improve my problem solving skills and also hope to learn new languages and frameworks</p>
       </div>
 
 
